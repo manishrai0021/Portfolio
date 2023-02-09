@@ -1,5 +1,6 @@
 import React from 'react'
 import './nav.css'
+import { Link } from 'react-router-dom'
 import {useState} from 'react'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
@@ -11,18 +12,16 @@ import {MdOutlineContactMail} from 'react-icons/md'
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
   return (
-    <nav>
-        <div className='wrapper'>
-          <div>
-            <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-          </div>
-          {/* <span>Home</span> */}
-        </div>
-        <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-        <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}><FaLaptopCode/></a>
-        <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}><MdWorkOutline/></a>
-        <a href="#timeline" onClick={() => setActiveNav('#timeline')} className={activeNav === '#timeline' ? 'active' : ''}><BsBarChartSteps/></a>
-        <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><MdOutlineContactMail/></a>
+    <nav className='flex justify-evenly font-semibold shadow-lg p-2 gap-2 fixed bg-white z-10 w-full'>
+      <div className='flex justify-between items-center border-2 px-4 rounded-full w-full'>
+        <Link to={"/"} className='text-3xl font-bold text-black'>MKR</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/skills"}>Skills</Link>
+        <Link to={"/projects"}>Projects</Link>
+        <Link to={"/timeline"}>Timeline</Link>
+        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/blog"}>Blog</Link>
+      </div>
     </nav>
   )
 }

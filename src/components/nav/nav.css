@@ -1,4 +1,4 @@
-nav{
+/* nav{
     background: rgba(0, 0, 0, 0.597);
     width: max-content;
     display: block;
@@ -30,4 +30,4 @@ nav a:hover{
 nav a:active{
     background: var(--color-primary);
     color: var(--color-bg);
-}
+} */

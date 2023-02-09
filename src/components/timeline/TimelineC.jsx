@@ -15,34 +15,34 @@ import "./timeline.css";
 const TimelineC = () => {
   const data = [
     {
-      date: "Sep 18 2020",
-      title: "NASA",
-      des: "Im fine how are you doing today",
+      date: "Dec 2 2022",
+      title: "Leapfrog",
+      des: "Intership in Software Engineer",
     },
     {
-      date: "Jan 18 2021",
-      title: "Hakathon",
-      des: "Lorem ipsum dolor sit amet, consectetur",
+      date: "Jul 7 2022",
+      title: "Blue Fox Pvt.Ltd",
+      des: "Intership in Frontend Developer.",
     },
     {
-      date: "Mar 18 2021",
-      title: "NASA",
-      des: "Lorem ipsum doloremque  sit amet  doing todayDate ",
+      date: "Nov 25 2021",
+      title: "Second Semester First Year",
+      des: "Learned HTML CSS and JS in second Semester.",
     },
     {
-      date: "Jun 22 2021",
-      title: "NASA",
-      des: "Im fine how are you doing today",
+      date: "Jun 22 2020",
+      title: "Itahari International College",
+      des: "Joined IIC in BIT",
     },
     {
-      date: "Sep 18 2022",
-      title: "NASA",
-      des: "Im fine how are you doing today",
+      date: "Dec 20 2019",
+      title: "Dharan Adarsha",
+      des: "Passed out +2 with Computer Science.",
     },
   ];
   return (
     <section id="timeline" className="w-full">
-      <h3 className="text-center text-[#1976d2]">Timeline</h3>
+      <h3 className="text-center text-[#1976d2] text-[2rem] mb-12">Timeline</h3>
       <Timeline position="alternate">
         {data.map((data) => {
           return (

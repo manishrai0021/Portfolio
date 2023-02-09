@@ -57,7 +57,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <h5>My Recent Works</h5>
-      <h2>Projects</h2>
+      <h2 className='text-[2rem]'>Projects</h2>
       {/* container */}
       <div className="container project_container">
         {
